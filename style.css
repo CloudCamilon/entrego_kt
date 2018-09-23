@@ -69,6 +69,19 @@ a {
 
 .description{
     margin-top: 50px;
+    color: #CCC0AB;
+    text-align: center;
+    font-size: 17px;
+}
+
+.we_description{
+    margin-top: 50px;
     color: white;
     text-align: center;
+    font-size: 22px;
+}
+
+.we_description_item{
+    margin-right: 10px;
+    margin-left: 15px;
 }
