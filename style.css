@@ -4,17 +4,36 @@
 }
 
 .entrego_header_logo{
-    margin-bottom: 15px;
     margin-left: -89px;
+    display: inline-block;
+    padding-bottom: 1rem;
+    white-space: nowrap;
 }
 
 a {
     cursor: pointer;  
 }
 
-.nav-item{
-    color: white;
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
+
+.navbar-nav { 
+    flex-direction: row;   
+    left: 30%; 
+}
+
+.nav-item {
+    color: white;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+
 
 .top_banner{
     z-index: 1;
@@ -27,4 +46,29 @@ a {
     background-position: center 0px;
     background-image: url(./EntregoAssets/home/bg-homebanner.png);
 }
-    
+  
+.entrego_home_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 220px;
+}
+
+.subtitle{ 
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 55px;    
+    display: block;
+}
+
+.span_search{
+    background-color: #2DCCCA;
+    color: white;
+}
+
+.description{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
