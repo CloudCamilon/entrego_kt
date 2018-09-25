@@ -49,11 +49,25 @@ img {
     width: 63%;
 }
 
+.entrego-subtitle{
+    color: white;
+    margin-top: 30px;
+    margin-bottom:  20px;
+    font-size: 22.5px;
+    font-family: Brandon-Reg, sans-serif;
+}
+
 @media (max-width: 575.98px) { 
     .top_section{
         height: 1000px;
         background-position: center -280px;
     }
+
+    .entrego-home-logo{
+        width: 100%;
+        margin-top: 120px;
+    }
+
  }
 
 @media (min-width: 576px) {  
@@ -62,6 +76,11 @@ img {
 
 @media (min-width: 768px) { 
     .entrego-logo{
+        width: 150px;
+    }
+
+    .entrego-logo-scrolled {
+        display: none;
         width: 150px;
     }
 
@@ -84,6 +103,11 @@ img {
 
 @media (min-width: 992px) {
     .entrego-logo{
+        width: 100%;
+    }
+
+    .entrego-logo-scrolled {
+        display: none;
         width: 100%;
     }
 
