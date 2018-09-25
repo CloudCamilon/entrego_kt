@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style1.css"/>    
-    <link rel="shortcut icon" type="image/x-icon" href="EntregoAssets/common/bullet-green.png" />
-    <title>Entrego Philippines Official Page</title>
-  </head>
-  <body>
-    <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-default">
-                <a class="navbar-brand" href="#">
-                    <img src="EntregoAssets/common/entrego-header.png" class="entrego-logo" /> 
-                </a>
-                
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"> ABOUT US <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"> SERVICES </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"> CAREERS </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"> CONTACT US </a>
-                    </li>
-                  </ul>
-                  </div>
-            </nav>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<head>
+  <meta charset='UTF-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="EntregoAssets/common/bullet-green.png" />
+  <title>Entrego Philippines Official Page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-default">
+      <a class="navbar-brand" href="#">
+        <img src="EntregoAssets/common/entrego-header.png" class="entrego-logo" />
+        <img src="EntregoAssets/common/entrego-footer.png" class="entrego-logo-scrolled" />
+      </a>
+
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> ABOUT US
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> SERVICES </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> CAREERS </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> CONTACT US </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="top_section">
+    <div class="container">
+      <img src="" class="entrego_home">
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        var $header_logo = $(".entrego-logo");
+        var $header_logo_scrolled = $(".entrego-logo-scrolled");
+        var $custom_toggler = $(".custom-toggler");
+
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+        if ($(this).scrollTop() > $nav.height()) {
+          $header_logo.css("display", "none");
+          $header_logo_scrolled.css("display", "block")
+          $custom_toggler.css("background-color", "white")
+          $custom_toggler.css("border-color", "white")
+
+        }
+
+        else {
+          $header_logo.css("display", "block");
+          $header_logo_scrolled.css("display", "none")
+          $custom_toggler.css("background-color", "#222F5F")
+          $custom_toggler.css("border-color", "#222F5F")
+
+        }
+
+      });
+    });
+
+  </script>
+</body>
+
 </html>

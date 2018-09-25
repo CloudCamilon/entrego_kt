@@ -16,7 +16,6 @@
     border-color: #222F5F;
 }
 
-
 .navbar-brand {
     padding-top: 0px;
 }
@@ -29,6 +28,33 @@ img {
     width: 63%;
 }
 
+.top_section{
+    z-index: 1;
+    position: relative;
+    height: auto;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-image: url(./EntregoAssets/home/bg-homebanner2.png);
+}
+
+.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+
+.entrego-logo-scrolled {
+    display: none;
+    width: 63%;
+}
+
+@media (max-width: 575.98px) { 
+    .top_section{
+        height: 1000px;
+        background-position: center -280px;
+    }
+ }
 
 @media (min-width: 576px) {  
     
