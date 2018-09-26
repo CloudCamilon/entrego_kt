@@ -47,7 +47,7 @@
   <section class="top_section">
     <div class="container">
       <div class="row">
-        <div class="entrego_title col-10 offset-1">
+        <div class="entrego_title col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
           <img src="./EntregoAssets/common/entrego-header-lg.png" class="entrego-home-logo">
         </div>
       </div>
@@ -58,10 +58,11 @@
       </div>
       <div class="row">
         <div class="col-10 offset-1">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" aria-label="Large" placeholder="Enter tracking number/s (comma)">
+          <div class="input-group input-group-lg entrego-search">
+            <input type="text" class="form-control" placeholder="Enter tracking number/s (comma)">
             <div class="input-group-append">
-              <span class="input-group-text span_search"></span>
+              <button class="btn d-none d-sm-none d-md-block track-btn" type="submit">Track my order</button>
+              <button class="btn d-sm-block d-md-none track-btn">&rsaquo;</button>
             </div>
           </div>
         </div>
